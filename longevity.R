@@ -39,7 +39,7 @@ rbind(
              AGE =  (Sys.Date() - tail(dfm$DOB, 1)) / 365))
 
 ## plot
-tiff("oldest-belgian.tiff", 10, 6, units = "in", res = 300, compress = "lzw")
+png("oldest-belgian.png", 10, 6, units = "in", res = 300)
 ggplot(df, aes(x = DATE, y = as.numeric(AGE), group = SEX)) +
   geom_point(aes(col = SEX)) +
   geom_line(aes(col = SEX)) +
