@@ -47,4 +47,3 @@ ggplot(df, aes(x = DATE, y = as.numeric(AGE), group = SEX)) +
   theme_bw() +
   theme(legend.position = "top")
 dev.off()
-
