@@ -1,5 +1,5 @@
 ### LONGEVITY
-### 25/09/2021
+### 02/10/2021
 
 ## required packages
 library(ggplot2)
@@ -7,12 +7,12 @@ library(ggplot2)
 ## import data
 
 ## .. oldest woman
-dfw <- read.csv2("oldest-woman.csv")
+dfw <- read.csv("oldest-woman.csv")
 dfw$DOB <- as.Date(dfw$DOB, format = "%d/%m/%Y")
 dfw$DOD <- as.Date(dfw$DOD, format = "%d/%m/%Y")
 
 ## .. oldest man
-dfm <- read.csv2("oldest-man.csv")
+dfm <- read.csv("oldest-man.csv")
 dfm$DOB <- as.Date(dfm$DOB, format = "%d/%m/%Y")
 dfm$DOD <- as.Date(dfm$DOD, format = "%d/%m/%Y")
 
